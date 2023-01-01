@@ -118,8 +118,6 @@ jobs:
             npm install
             npm audit fix --audit-level=critical --force
             npm audit fix --audit-level=critical --force
-            npm audit minimist --depth 4
-            npm update loader-utils --depth 2 
             npm audit --audit-level=critical
             
         # npm audit fix
@@ -137,9 +135,6 @@ jobs:
             npm install
             npm audit fix --audit-level=critical --force
             npm audit fix --audit-level=critical --force
-            npm audit minimist --depth 4
-            npm update loader-utils --depth 2 
-            npm audit --audit-level=critical
             npm audit --audit-level=critical
     - slack/notify:
           event: fail
